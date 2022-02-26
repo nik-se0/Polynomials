@@ -1,6 +1,0 @@
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/CMakeFiles/ALL_BUILD.dir
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/CMakeFiles/ZERO_CHECK.dir
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/include/CMakeFiles/Polynom.dir
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/samples/CMakeFiles/main.dir
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/gtest/CMakeFiles/gtest.dir
-D:/1_______________/OneDrive/Файлы с учебы/3 семестр/GIT/mp2-polynom/bilt/test/CMakeFiles/test_Polynom.dir
