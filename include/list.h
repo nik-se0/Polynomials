@@ -10,11 +10,11 @@ class  Node
   // конструкторы
   Node(TData D = NULL, Node<TData>* N = nullptr) { data = D; next = N; }
   Node(Node<TData>& N2) { data = N2.data; next = nullptr; } // конструктор копирования
-  /*перегрузка операций
-  //bool operator<   (const Node<TData>& N) const { return (data < N.data); }
-  //bool operator>   (const Node<TData>& N) const { return (data > N.data); }
-  //bool operator!=  (const Node<TData>& N) const { return !(*this == N); }
-  //bool operator==  (const Node<TData>& N) const { return (data == N.data && next == N.next); }*/
+  //перегрузка операций
+  bool operator<   (const Node<TData>& N) const { return (data < N.data); }
+  bool operator>   (const Node<TData>& N) const { return (data > N.data); }
+  bool operator!=  (const Node<TData>& N) const { return !(*this == N); }
+  bool operator==  (const Node<TData>& N) const { return (data == N.data && next == N.next); }
 };
 
 // Список
@@ -40,8 +40,8 @@ class List
   void Delete(Node<TData>* N);
   // Перегрузка операций
   List<TData>& operator=(const List<TData>& L2);
-  /*bool operator==(const List<TData>& L) const;
- // bool operator!=(const List<TData>& L) const { return !(*this == L); }*/
+  bool operator==(const List<TData>& L) const;
+  bool operator!=(const List<TData>& L) const { return !(*this == L); }
 };
 
 // Pелизация функциий для класса списка
@@ -86,7 +86,7 @@ List<TData>& List<TData>::operator=(const List<TData>& L2)
   it = head;
   return *this;
 }
-/*template<class TData>
+template<class TData>
 bool List<TData>::operator==(const List<TData>& L) const
 {
 	bool flag = true;
@@ -104,7 +104,7 @@ bool List<TData>::operator==(const List<TData>& L) const
 			flag = false;
 	}
 	return flag;
-}*/
+}
 // Методы 
 template <class TData>
 void List<TData>::InsertAfter(Node<TData>* N, TData Data)
